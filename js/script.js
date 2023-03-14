@@ -30,13 +30,15 @@ for(i = 0; i < images.length ; i++){
     
     slide += `
     <div class="slide d-none">
-        <img src="./${images[i]}" alt="img${i}">
+        <div class = "imgBox">
+            <img src="./${images[i]}" alt="img${i}" class="img-fluid">
+        </div>
     </div>`;
 
     thumb +=
     `
     <div class="thumb deactive">
-        <img src="./${images[i]}" alt="img${i}">
+        <img src="./${images[i]}" alt="img${i} class="img-fluid h-100">
     </div>
     `;
     
