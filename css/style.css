@@ -5,8 +5,8 @@
 
 .slider{
     width: 70%;
-    height: 60%;
-    background-color: black;
+    height: 600px;
+    background-color: #e7e9eb;
 }
 
 .slides,
@@ -15,7 +15,8 @@
 }
 
 .slides {
-    width: 90%;
+    width: 70%;
+    height: 100%;
 }
 
 .slide{
@@ -32,6 +33,20 @@
     height: calc(100% / 5);
 }
 
+.imgBox{
+    width: 100%;
+    height: 700px;
+   
+}
+
+.imgBox > img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+
 .thumb > img{
     width: 100%;
     height: 100%;
@@ -39,15 +54,6 @@
     object-position: center;
     display: block;
 }
-
-.slide > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
 #up,
 #down{
     position: absolute;
