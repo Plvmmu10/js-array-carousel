@@ -22,6 +22,7 @@ const images = [
 let currentIndex = 0;
 let slide = '';
 let thumb = '';
+const slider = document.querySelector('.slider');
 
 const thumbs = document.querySelector('.thumbs');
 const slides = document.querySelector('.slides');
@@ -57,4 +58,8 @@ document.getElementById("down").addEventListener('click',goDown);
 
 
 
+slider.addEventListener('mouseover',()=> clearInterval(autoPlay));
+
+
+const autoPlay = setInterval(goDown, 2000);
 
